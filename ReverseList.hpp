@@ -32,6 +32,7 @@ public:
         }
         for(int i = count; i != 0; --i){
             count = 0;
+            current = head;
             while(count != i){
                 current = current->next;
                 count++;

@@ -21,13 +21,20 @@ public:
             return list;
         }
         Node* current = head;
-        list.addHead(current->data);
         if(current->next != nullptr){
             list.addHead(current->data);
             return list;
         }
+        int count = 0;
         while(current->next != nullptr){
             current = current->next;
+            count++;
+        }
+        for(int i = count; i != 0; --i){
+            while(count != i){
+                current = current->next;
+                count++;
+            }
             list.addHead(current->data);
         }
         return list;

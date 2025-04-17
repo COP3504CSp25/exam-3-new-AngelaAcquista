@@ -19,8 +19,8 @@ public:
         Node* current = head;
         LinkedList list;
 
-        while(){
-
+        while(current->next != nullptr){
+            current = current->next;
         }
         return list;
     }

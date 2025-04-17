@@ -16,6 +16,13 @@ public:
     
     LinkedList reverseList() const {
         // implement your function here!
+        Node* current = head;
+        LinkedList list;
+
+        while(){
+
+        }
+        return list;
     }
 
     Node* head = nullptr;

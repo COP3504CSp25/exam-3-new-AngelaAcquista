@@ -26,16 +26,17 @@ public:
         Node* current = head;
         arr[0] = current->data;
         arr[1] = current->data;
-        int count;
+        arr[2] = current->data;
+        int count = 1;
         while(current->next != nullptr){
+            current = current->next;
+            arr[2] += current->data;
             if(arr[0] > current->data){
                 arr[0] = current->data;
             }
             if(arr[1] < current->data){
                 arr[1] = current->data;
             }
-            arr[2] += current->data;
-            current = current->next;
             count++;
         }
         arr[2] /= count;

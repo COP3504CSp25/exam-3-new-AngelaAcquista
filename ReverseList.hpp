@@ -31,6 +31,7 @@ public:
             count++;
         }
         for(int i = count; i != 0; --i){
+            count = 0;
             while(count != i){
                 current = current->next;
                 count++;

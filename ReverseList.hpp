@@ -18,10 +18,15 @@ public:
         // implement your function here!
         Node* current = head;
         LinkedList list;
+        if(current->next != nullptr){
 
+            return list;
+        }
+        
         while(current->next != nullptr){
             current = current->next;
         }
+
         return list;
     }
 
